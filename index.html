@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Forever & Always ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Cormorant+Garamond:wght@400;600&family=Caveat:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- OPENING FLOWER GARDEN -->
+
+<section id="welcomeScreen" class="welcome-screen">
+
+<div class="garden-overlay"></div>
+
+<div class="sparkles">
+<span>✦</span>
+<span>✧</span>
+<span>✦</span>
+<span>✧</span>
+</div>
+
+<div class="flowers">
+
+<img src="https://images.unsplash.com/photo-1468327768560-75b778cbb551?w=600"
+class="flower flower1">
+
+<img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=600"
+class="flower flower2">
+
+<img src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?w=600"
+class="flower flower3">
+
+<img src="https://images.unsplash.com/photo-1455656678494-4d1b5f3e7ad1?w=600"
+class="flower flower4">
+
+<img src="https://images.unsplash.com/photo-1468327768560-75b778cbb551?w=600"
+class="flower flower5">
+
+<img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=600"
+class="flower flower6">
+
+</div>
+
+<div class="butterfly butterfly1">🦋</div>
+<div class="butterfly butterfly2">🦋</div>
+
+<div class="welcome-content">
+
+<h1>Forever & Always ❤️</h1>
+
+<p>
+
+Welcome to our little garden of memories,
+flowers, dreams and forever.
+
+</p>
+
+<button id="enterBtn">
+Open Our Story 🌹
+</button>
+
+</div>
+
+</section>
+
+<!-- MAIN WEBSITE -->
+
+<div id="mainContent">
+
+<!-- HERO -->
+
+<header class="hero">
+
+<div class="hero-paper">
+
+<h1>Happy Anniversary ❤️</h1>
+
+<p>
+
+Made with pure and gentle love for my BABYYYYY.
+
+</p>
+
+</div>
+
+</header>
+
+<!-- ENVELOPE -->
+
+<section class="envelope-section">
+
+<div class="envelope-container">
+
+<div class="envelope" onclick="openLetter()">
+
+<div class="wax-seal">
+❤
+</div>
+
+<p>
+Open My Letter 💌
+</p>
+
+</div>
+
+<div id="letter" class="letter">
+
+<div class="coffee-ring"></div>
+
+<h2>My Beautifull Princess🌹❤️</h2>
+
+<p>
+
+Happy Anniversary.
+
+The love I have for you is more than words can say or even feelings could express.But when you look in my eyes you would probably see how much they shine for you.You bring out many different versions of me no body has ever brought out.You are perfect in my eyes just the way you are.And sometimes it realy hurts me when you feel insecure or not confident because if i could only give you my eyes for you to see through them, you would see nothing but perfection.Im even crying while i write this because i just love you so much and i know you also love me soo much.And This so much love is something ive never experienced before.It heals me in every broken part,it soothes all my broken memories and makes me feel safe.Thank you for being my BESTFRIEND AND MY LOVE..ALWAYS AND FOREVER BE BY YOURSIDE,YOUR LOUDEST CHEAR AND YOUR BIGGEST SUPPORTER.
+
+❤️
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- OUR ADVENTURES -->
+
+<section class="scrapbook-section">
+
+<h2>📔 Upcoming dates</h2>
+
+<div class="input-box">
+
+<input
+type="text"
+id="dateIdea"
+placeholder="Date idea...">
+
+<button onclick="addAdventure()">
+Add Adventure 🌹
+</button>
+
+</div>
+
+<div id="adventureList"></div>
+
+</section>
+
+<!-- WISH JAR -->
+
+<section class="scrapbook-section">
+
+<h2>🌙 Wish Jar/ Things you wish you/we could have</h2>
+
+<div class="input-box">
+
+<input
+type="text"
+id="wishInput"
+placeholder="Write a dream...">
+
+<button onclick="addWish()">
+Add Wish ✨
+</button>
+
+</div>
+
+<ul id="wishList"></ul>
+
+</section>
+
+<!-- MEMORY WALL -->
+
+<section class="memory-wall">
+
+<h2>📷 Memory Wall</h2>
+
+<div class="memory-grid">
+
+<div class="polaroid">
+
+<div class="tape"></div>
+
+<img
+src="images/hands.jpg"
+alt="memory">
+
+<p>
+Our First date ❤️
+</p>
+
+</div>
+
+<div class="polaroid">
+
+<div class="tape"></div>
+
+<img
+src="images/us.jpg"
+alt="memory">
+
+<p>
+My Princess🌹
+</p>
+
+</div>
+
+<div class="polaroid">
+
+<div class="tape"></div>
+
+<img
+src="images/Both.jpg"
+alt="memory">
+
+<p>
+My BABYYYYY ✨
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- LOVE NOTES -->
+
+<section class="notes-section">
+
+<h2>💌 Little Love Notes</h2>
+
+<div class="notes-grid">
+
+<div class="note">
+You are The pretties Lady I've ever seen my Love, I love how you smile warmly and always ensure to give your best when it comes to the people you love.
+❤️
+</div>
+
+<div class="note">
+I will always be there for you my Love..ALWAYS by yourside nomatter what..Im ALWAYS just one phone call and i'll be there.
+🌹
+</div>
+
+<div class="note">
+I Love how we sound when we laugh together..When your happy im also happy.
+✨
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-flowers">
+🌹 🌷 🥀 🌸 🌹
+</div>
+
+<h3>
+Forever & Always ❤️
+</h3>
+
+<p>
+Made with love.
+</p>
+
+</footer>
+
+</div>
+
+<script>
+
+/* ENTER WEBSITE */
+
+document
+.getElementById("enterBtn")
+.addEventListener("click",()=>{
+
+document
+.getElementById("welcomeScreen")
+.classList.add("hide");
+
+setTimeout(()=>{
+
+document
+.getElementById("mainContent")
+.style.display="block";
+
+},800);
+
+});
+
+/* LETTER */
+
+function openLetter(){
+
+document
+.getElementById("letter")
+.classList.toggle("show");
+
+}
+
+/* ADVENTURES */
+
+function addAdventure(){
+
+let input =
+document.getElementById("dateIdea");
+
+if(input.value.trim()==="")
+return;
+
+let adventures =
+JSON.parse(
+localStorage.getItem("adventures")
+)||[];
+
+adventures.push(input.value);
+
+localStorage.setItem(
+"adventures",
+JSON.stringify(adventures)
+);
+
+input.value="";
+
+renderAdventures();
+
+}
+
+function renderAdventures(){
+
+let container =
+document.getElementById("adventureList");
+
+container.innerHTML="";
+
+let adventures =
+JSON.parse(
+localStorage.getItem("adventures")
+)||[];
+
+adventures.forEach(item=>{
+
+container.innerHTML +=
+`<div class="ticket">${item}</div>`;
+
+});
+
+}
+
+renderAdventures();
+
+/* WISH JAR */
+
+function addWish(){
+
+let input =
+document.getElementById("wishInput");
+
+if(input.value.trim()==="")
+return;
+
+let wishes =
+JSON.parse(
+localStorage.getItem("wishes")
+)||[];
+
+wishes.push(input.value);
+
+localStorage.setItem(
+"wishes",
+JSON.stringify(wishes)
+);
+
+input.value="";
+
+renderWishes();
+
+}
+
+function renderWishes(){
+
+let list =
+document.getElementById("wishList");
+
+list.innerHTML="";
+
+let wishes =
+JSON.parse(
+localStorage.getItem("wishes")
+)||[];
+
+wishes.forEach(item=>{
+
+list.innerHTML +=
+`<li>${item}</li>`;
+
+});
+
+}
+
+renderWishes();
+
+</script>
+
+</body>
+</html>

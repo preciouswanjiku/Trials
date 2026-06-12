@@ -1,0 +1,867 @@
+/* ==========================================
+   FOREVER & ALWAYS ❤️
+   Vintage Romantic Scrapbook Theme
+========================================== */
+
+:root{
+
+--maroon:#5a2020;
+--dark-maroon:#3f1414;
+
+--paper:#f8efd8;
+--paper-dark:#ead6b0;
+
+--rose:#a65c6a;
+--gold:#d1aa5f;
+
+--ink:#4a3528;
+
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+background:
+linear-gradient(
+rgba(90,32,32,.95),
+rgba(63,20,20,.95)
+);
+
+font-family:'Cormorant Garamond',serif;
+
+overflow-x:hidden;
+
+color:var(--paper);
+
+}
+
+/* ==========================
+   WELCOME SCREEN
+========================== */
+
+.welcome-screen{
+
+position:fixed;
+
+inset:0;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+overflow:hidden;
+
+background:
+linear-gradient(
+rgba(90,32,32,.85),
+rgba(63,20,20,.92)
+),
+
+url("https://images.unsplash.com/photo-1468327768560-75b778cbb551?w=1600");
+
+background-size:cover;
+background-position:center;
+
+z-index:9999;
+
+transition:1s;
+
+}
+
+.hide{
+
+opacity:0;
+
+pointer-events:none;
+
+}
+
+.garden-overlay{
+
+position:absolute;
+
+inset:0;
+
+background:
+rgba(0,0,0,.2);
+
+}
+
+.welcome-content{
+
+position:relative;
+
+text-align:center;
+
+z-index:10;
+
+padding:20px;
+
+}
+
+.welcome-content h1{
+
+font-family:'Dancing Script',cursive;
+
+font-size:6rem;
+
+color:#fff6dc;
+
+text-shadow:
+0 4px 20px rgba(0,0,0,.4);
+
+margin-bottom:20px;
+
+}
+
+.welcome-content p{
+
+font-size:1.4rem;
+
+max-width:700px;
+
+margin:auto;
+
+line-height:1.7;
+
+}
+
+#enterBtn{
+
+margin-top:35px;
+
+padding:16px 40px;
+
+border:none;
+
+border-radius:50px;
+
+background:#fff4d7;
+
+color:var(--maroon);
+
+font-size:1rem;
+
+cursor:pointer;
+
+transition:.4s;
+
+font-weight:bold;
+
+}
+
+#enterBtn:hover{
+
+transform:
+translateY(-4px)
+scale(1.05);
+
+}
+
+/* ==========================
+   FLOWERS
+========================== */
+
+.flower{
+
+position:absolute;
+
+width:180px;
+
+border-radius:20px;
+
+box-shadow:
+0 15px 35px rgba(0,0,0,.3);
+
+animation:
+floatFlower 8s ease-in-out infinite;
+
+}
+
+.flower1{
+top:8%;
+left:5%;
+}
+
+.flower2{
+top:15%;
+right:8%;
+}
+
+.flower3{
+bottom:15%;
+left:10%;
+}
+
+.flower4{
+bottom:8%;
+right:10%;
+}
+
+.flower5{
+top:40%;
+left:2%;
+}
+
+.flower6{
+top:45%;
+right:2%;
+}
+
+@keyframes floatFlower{
+
+50%{
+
+transform:
+translateY(-15px)
+rotate(2deg);
+
+}
+
+}
+
+/* ==========================
+   BUTTERFLIES
+========================== */
+
+.butterfly{
+
+position:absolute;
+
+font-size:2rem;
+
+z-index:20;
+
+}
+
+.butterfly1{
+
+top:25%;
+
+left:-100px;
+
+animation:
+fly1 15s linear infinite;
+
+}
+
+.butterfly2{
+
+top:60%;
+
+left:-150px;
+
+animation:
+fly2 18s linear infinite;
+
+}
+
+@keyframes fly1{
+
+to{
+
+transform:
+translateX(130vw)
+translateY(-50px);
+
+}
+
+}
+
+@keyframes fly2{
+
+to{
+
+transform:
+translateX(130vw)
+translateY(50px);
+
+}
+
+}
+
+/* ==========================
+   SPARKLES
+========================== */
+
+.sparkles span{
+
+position:absolute;
+
+color:var(--gold);
+
+font-size:2rem;
+
+animation:
+twinkle 2s infinite alternate;
+
+}
+
+.sparkles span:nth-child(1){
+
+top:15%;
+left:30%;
+
+}
+
+.sparkles span:nth-child(2){
+
+top:25%;
+right:25%;
+
+}
+
+.sparkles span:nth-child(3){
+
+bottom:25%;
+left:25%;
+
+}
+
+.sparkles span:nth-child(4){
+
+bottom:20%;
+right:30%;
+
+}
+
+@keyframes twinkle{
+
+from{
+opacity:.2;
+}
+
+to{
+opacity:1;
+}
+
+}
+
+/* ==========================
+   MAIN CONTENT
+========================== */
+
+#mainContent{
+
+display:none;
+
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+
+padding:120px 20px 80px;
+
+text-align:center;
+
+}
+
+.hero-paper{
+
+max-width:800px;
+
+margin:auto;
+
+background:var(--paper);
+
+padding:50px;
+
+border-radius:12px;
+
+color:var(--ink);
+
+box-shadow:
+0 20px 40px rgba(0,0,0,.2);
+
+transform:rotate(-1deg);
+
+}
+
+.hero-paper h1{
+
+font-family:'Dancing Script',cursive;
+
+font-size:4.5rem;
+
+color:var(--rose);
+
+margin-bottom:15px;
+
+}
+
+.hero-paper p{
+
+font-size:1.4rem;
+
+line-height:1.8;
+
+}
+
+/* ==========================
+   ENVELOPE
+========================== */
+
+.envelope-section{
+
+padding:60px 20px;
+
+display:flex;
+justify-content:center;
+
+}
+
+.envelope-container{
+
+max-width:900px;
+width:100%;
+
+}
+
+.envelope{
+
+background:#e7d3ad;
+
+height:220px;
+
+border-radius:10px;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+cursor:pointer;
+
+box-shadow:
+0 15px 30px rgba(0,0,0,.2);
+
+}
+
+.envelope p{
+
+color:var(--ink);
+
+font-size:1.3rem;
+
+}
+
+.wax-seal{
+
+width:70px;
+height:70px;
+
+border-radius:50%;
+
+background:#8b0000;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+color:white;
+
+font-size:1.8rem;
+
+margin-bottom:15px;
+
+}
+
+/* ==========================
+   LETTER
+========================== */
+
+.letter{
+
+background:var(--paper);
+
+max-height:0;
+
+overflow:hidden;
+
+transition:1s;
+
+padding:0 40px;
+
+color:var(--ink);
+
+position:relative;
+
+}
+
+.letter.show{
+
+max-height:1200px;
+
+padding:50px;
+
+}
+
+.coffee-ring{
+
+position:absolute;
+
+width:120px;
+height:120px;
+
+border-radius:50%;
+
+border:10px solid
+rgba(120,80,40,.12);
+
+top:30px;
+right:30px;
+
+}
+
+.letter h2{
+
+font-family:'Dancing Script',cursive;
+
+font-size:3.5rem;
+
+color:var(--rose);
+
+margin-bottom:20px;
+
+}
+
+.letter p{
+
+font-family:'Caveat',cursive;
+
+font-size:2rem;
+
+line-height:2;
+
+}
+
+/* ==========================
+   SCRAPBOOK SECTION
+========================== */
+
+.scrapbook-section{
+
+padding:80px 20px;
+
+text-align:center;
+
+}
+
+.scrapbook-section h2{
+
+font-family:'Dancing Script',cursive;
+
+font-size:3.5rem;
+
+margin-bottom:30px;
+
+}
+
+.input-box{
+
+display:flex;
+
+justify-content:center;
+
+gap:10px;
+
+flex-wrap:wrap;
+
+}
+
+.input-box input{
+
+padding:15px;
+
+width:300px;
+
+border:none;
+
+border-radius:10px;
+
+}
+
+.input-box button{
+
+padding:15px 25px;
+
+border:none;
+
+background:var(--rose);
+
+color:white;
+
+border-radius:10px;
+
+cursor:pointer;
+
+}
+
+.ticket{
+
+background:var(--paper);
+
+color:var(--ink);
+
+max-width:500px;
+
+margin:20px auto;
+
+padding:20px;
+
+border-left:6px solid var(--rose);
+
+border-radius:10px;
+
+}
+
+/* ==========================
+   WISH JAR
+========================== */
+
+#wishList{
+
+list-style:none;
+
+max-width:700px;
+
+margin:auto;
+
+}
+
+#wishList li{
+
+background:var(--paper);
+
+color:var(--ink);
+
+padding:15px;
+
+margin:15px 0;
+
+border-radius:10px;
+
+transform:rotate(-1deg);
+
+}
+
+/* ==========================
+   MEMORY WALL
+========================== */
+
+.memory-wall{
+
+padding:100px 20px;
+
+text-align:center;
+
+}
+
+.memory-wall h2{
+
+font-family:'Dancing Script',cursive;
+
+font-size:4rem;
+
+margin-bottom:40px;
+
+}
+
+.memory-grid{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+}
+
+.polaroid{
+
+background:white;
+
+width:280px;
+
+padding:15px;
+
+color:var(--ink);
+
+position:relative;
+
+box-shadow:
+0 15px 30px rgba(0,0,0,.2);
+
+}
+
+.polaroid:nth-child(1){
+transform:rotate(-4deg);
+}
+
+.polaroid:nth-child(2){
+transform:rotate(3deg);
+}
+
+.polaroid:nth-child(3){
+transform:rotate(-2deg);
+}
+
+.polaroid img{
+
+width:100%;
+
+height:300px;
+
+object-fit:cover;
+
+}
+
+.polaroid p{
+
+margin-top:12px;
+
+}
+
+.tape{
+
+width:80px;
+height:25px;
+
+background:
+rgba(255,230,180,.7);
+
+position:absolute;
+
+top:-10px;
+left:50%;
+
+transform:
+translateX(-50%)
+rotate(-3deg);
+
+}
+
+/* ==========================
+   LOVE NOTES
+========================== */
+
+.notes-section{
+
+padding:100px 20px;
+
+text-align:center;
+
+}
+
+.notes-section h2{
+
+font-family:'Dancing Script',cursive;
+
+font-size:4rem;
+
+margin-bottom:40px;
+
+}
+
+.notes-grid{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.note{
+
+background:#fff6d8;
+
+color:var(--ink);
+
+width:260px;
+
+padding:25px;
+
+font-family:'Caveat',cursive;
+
+font-size:1.7rem;
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.15);
+
+transform:rotate(-2deg);
+
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+
+padding:80px 20px;
+
+text-align:center;
+
+}
+
+.footer-flowers{
+
+font-size:2rem;
+
+margin-bottom:20px;
+
+}
+
+footer h3{
+
+font-family:'Dancing Script',cursive;
+
+font-size:3rem;
+
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:768px){
+
+.welcome-content h1{
+font-size:3.5rem;
+}
+
+.hero-paper h1{
+font-size:3rem;
+}
+
+.letter h2{
+font-size:2.5rem;
+}
+
+.letter p{
+font-size:1.5rem;
+}
+
+.flower{
+width:120px;
+}
+
+}
